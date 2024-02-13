@@ -16,6 +16,19 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        
+        Button(action: { print("Qwertyi was tapped") })
+        {
+            Text("Button")
+        }
+        .padding()
+        .foregroundStyle(.white)
+        .background {
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(.blue)
+                .shadow(color: .black, radius: 2, x: 6, y: 6)
+        }
+        .padding()
     }
 }
 
